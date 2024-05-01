@@ -19,8 +19,8 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/, // Add this rule for JavaScript files
-        exclude: /node_modules/, // It's a good practice to exclude node_modules
+        test: /\.js$/, 
+        exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
           options: {
@@ -41,6 +41,6 @@ module.exports = {
     },
     compress: true,
     port: 9000,
-    hot: true, // Disable Hot Module Replacement for CSS
+    hot: true, 
   },
 };
